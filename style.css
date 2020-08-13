@@ -1,0 +1,26 @@
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+table {
+  text-align: center;
+  font-family: "Raleway"
+}
+
+.changeText {
+  font-family: "Serif"
+}
+
+#content {
+  margin-left: auto;
+  margin-right: auto;
+  width: 600px;
+}
+
+th, td {
+  padding: 15px;
+  text-align: left;
+}

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <!-- different links for google fonts!! google fonts = prettier website! -->
+
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Actor" rel="stylesheet">
+
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC" rel="stylesheet">
+
+   <link href="https://fonts.googleapis.com/css?family=Old+Standard+TT" rel="stylesheet">
+
+   <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC" rel="stylesheet">
+
+   
+
+    <title>Cyber Security</title>
+
+    <style>
+        h1 {
+            font-size: 60px;
+            font-weight: bold;
+            text-align: middle;
+            font-family: "Playfair Display SC";
+        }
+        
+        h3 {
+            font-family: "Raleway";
+            text-align: middle;
+            font-size: 20px;
+        }
+
+        h4 {
+          font-family: "Raleway";
+          text-align: left;
+          font-size: 15px;
+        }
+        
+        body{
+            font-family: "Playfair Display SC"
+        }
+
+        <tr>{
+          font-family: "Playfair Display SC"
+        }
+    </style>
+  </head>
+
+  <body>
+   <!-- title! -->
+    <center><h1 class="animated lightSpeedIn delay-1s"> 
+      <b><u> C Y B E R  ⋆  S E C U R I T Y </u></b> 
+     
+
+    </h1>
+<div class="border"></div>
+    <div id = "content">
+    <center><h3> 
+      The truth behind <i> YOUR </i>  cybersecurity-
+    <br>
+      how to make your passwords beat the hackers.</h3>
+
+      <br>
+
+      <h4> Hackers can open pathways and easily access our personal information just with a click. We are making their jobs easier when we pick simple passwords that are guessable and give away your tendencies. Using the same password for multiple sites can also lead to breach of crucial information. 
+      
+      <br> 
+      <br> 
+
+      The table below indicates one of the most compromised passwords attacked by hackers v.s. the most effective passwords against hackers. Notice the trends between the two. </h4>
+
+  
+      <table border="1">
+        <center><tr>
+          <th style="text-align: center; vertical-align: middle;" >✅</th>
+          <th style="text-align: center; vertical-align: middle;" >❌</th>
+        </tr></center>
+        
+         <tr>
+           <td>SterlingGmail20.15</td>
+           <td>123</td>
+         </tr>
+
+         <tr>
+           <td>D3ltagamm@y</td>
+           <td>1234</td>
+         </tr>
+
+         <tr>
+           <td>BankLogin!3yesyes</td>
+           <td>00000</td>
+         </tr>
+
+         <tr>
+           <td>D0gsaremybestfr13nds</td>
+           <td>1234go</td>
+         </tr>
+
+         <tr>
+           <td>C@ts-and-Dogs-Living-together</td>
+           <td>123abc</td>
+         </tr>
+      </table>
+   
+      
+
+  
+      
+      <h4> 
+      Our purpose is to design an effective way to test whether your password is impregnable or not. This way, you can keep vital information safe. 
+<br>
+      
+      <br>
+       <hr>
+       <br>
+      Type in a password and give it a try! Through given advice, we'll offer you advice to change your given password(s) or make them stronger by adding specialized characters and/or numbers. Good luck on making an efficient password. </h4>
+      
+      
+      
+
+    <p> 
+      <script>
+        function getInput(){
+        var input = document.getElementById("userInput").value;
+        console.log(input);
+        var letters = input.match(/[a-z]/gi);
+        var pattern = new RegExp(/[~`!#$%\^&*+=\-\[\]\\';,/{}|\\":<>\?]/);
+
+        if(input.length < 12) {
+          alert("This is a weak password! Your password should be over 12 characters.")
+        }
+
+        else if(letters == null) {
+          alert("Your password cannot be all numbers. Try again.")
+        }
+
+        else if(input == input.toLowerCase()){
+	        alert("You should have at least one upper case in your password! Try again.")
+	      }
+
+        else if(pattern.test(input)) {
+          alert("Nice use of specialized characters!")
+
+        }
+
+        else {
+          alert("Congrats! You have a strong password!!!")
+        }
+
+        }
+        
+        
+      </script>
+      <form onsubmit= getInput() method="get" style= "font-size: 25px;">
+       
+      Enter a password: <input type="text" name="fname" id="userInput"><br>
+    </p>
+  <div id="changeText"></div> 
+    <script>
+      var text = ["TIPS: Experts now recommend having at least 13 characters in your password to avoid being hacked.", "TIPS: Two factor authentications (emailing you after confirming a password) add another layer of protection.", "TIPS: Don’t write your passwords down. Password managers even fill out your info for you on websites.", "TIPS: Don’t use your personal information and try to change your passwords on a regular basis.","TIPS: 2,000,000 accounts on Adobe can be unlocked with the password “123456.”"]; 
+var counter = 0;
+var elem = document.getElementById("changeText");
+var inst = setInterval(change, 8000);
+
+function change() {
+  elem.innerHTML = text[counter];
+  counter++;
+  if (counter >= text.length) {
+    counter = 0;
+    // clearInterval(inst); // uncomment this if you want to stop refreshing after one cycle
+  }
+}
+</script>
+</div>
+  </body>
+</html>
